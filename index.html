@@ -95,19 +95,19 @@
 				<img width="100%" src="images/webComponentCode2.png" alt="" />
 			</section>
 			<section data-background="#0273D4">
-				<h2>Cuantos Web Components hay?</h2>
+				<h2>¿Cuántos Web Components hay?</h2>
 				<img width="100%" src="images/reditApp-1.PNG" alt="" />
 			</section>
 			<section data-background="#0273D4">
-				<h2>1?</h2>
+				<h2>¿1?</h2>
 				<img width="100%" src="images/redditApp1.png" alt="" />
 			</section>
 			<section data-background="#0273D4">
-				<h2>2?</h2>
+				<h2>¿2?</h2>
 				<img width="100%" src="images/redditApp2.png" alt="" />
 			</section>
 			<section data-background="#0273D4">
-				<h2>3?</h2>
+				<h2>¿3?</h2>
 				<img width="100%" src="images/redditApp3.png" alt="" />
 			</section>
 			<section data-background="#0273D4">
@@ -115,7 +115,7 @@
 				<img width="100%" src="images/redditApp4.png" alt="" />
 			</section>
 			<section data-background="#0273D4">
-				<h2>Para esta aplicaci&oacute;n solo necesitamos 2 Web Components</h2>
+				<h2>2 Web Components</h2>
 				<img width="100%" src="images/redditApp5.png" alt="" />
 			</section>
 			<section data-background="#0273D4">
@@ -125,6 +125,105 @@
 			<section data-background="#0273D4">
 				<h2>Manos a la Obra</h2>
 				<p>Repositorio: https://github.com/seagomezar/redditappstepbystep</p>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 0</h2>
+				<ul>
+					<li>1. Creamos el archivo package JSON</li>
+					<li>2. Ajustamos el t&iacute;tulo.</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 1</h2>
+				<ul>
+					<li>Creamos el archivo tsconfig.json</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 2</h2>
+				<ul>
+					<li>Creamos una carpeta app</li>
+					<li>Creamos un archivo llamado app.component.ts</li>
+					<li>Creamos nuestro primer Component</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 3</h2>
+				<ul>
+					<li>Creamos el archivo boot.ts donde importamos el componente que hemos creado</li>
+					<li>Creamos el archivo index.html donde inclu&iacute;mos las librer&iacute;as e inicializamos la aplicaci&oacute;n</li>
+					<li>npm start</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 4</h2>
+				<ul>
+					<li>Inclu&iacute;mos los estilos preparados</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 5</h2>
+				<ul>
+					<li>Creamos nuestro Form Component incluyendo la vista del Web Component</li>
+					<li>Incluimos en nuestro archivo index.html la etiqueta que hemos hecho.</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 6</h2>
+				<ul>
+					<li>A&ntilde;adimos una funci&oacute;n a nuestro bot&oacute;n y a&ntilde;adimos modelos a los inputs.</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 7</h2>
+				<ul>
+					<li>Creamos el component Article y lo inclu&iacute;mos en boot.ts.</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 8</h2>
+				<ul>
+					<li>A&ntilde;adimos return false para que no reinicie la p&aacute;gina cada vez que votamos.</li>
+					<li>Colocamos adentro de nuestro Form Component el Reddit Article Component</li>
+					<li>Removemos del Boot.ts la el Article Component, y la etiqueta del index.html</li>
+					<li>Incluimos el Article Component Dentro del FormComponent como directiva</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 9</h2>
+				<ul>
+					<li>Creamos una clase llamada Article la cual permite crear objetos de tipo Art&iacute;culo</li>
+					<li>Cambiamos el constructor para que cree un objeto de tipo Art&iacute;culo</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 10</h2>
+				<ul>
+					<li>Pasamos la funciones de votos a la clase y accedemos a ellas desde la vista con el operador (.)</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 11</h2>
+				<ul>
+					<li>Pasamos nuestra clase Art&iacute;culo a un archivo aparte llamado article.class, las clases deben ser almacenadas en archivos class.ts</li>
+					<li>Cambiamos el construtor del Form Component para que por defecto cree dos Art&iacute;culos</li>
+					<li>Colocamos los articulos en un Array de art&iacute;culos</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 12</h2>
+				<ul>
+					<li>En el Article Component decimos que la vista va a tener un input llamado Article</li>
+					<li>En el Form Component hacemos un ngFor para cada uno de los Art&iacute;culos</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2>Paso 13</h2>
+				<ul>
+					<li>Removemos el c&oacute;digo del Article Component porque no es necesario nada dentro de &eacute;l</li>
+					<li>A&ntilde;adimos el target blank y Arreglamos el link del art&iacute;culo</li>
+					<li>Creamos una funci&oacute;n que nos permite mostrar los art&iacute;culos por el orden de los votos.</li>
+				</ul>
 			</section>
 			<section data-background="#0273D4">
 				<h2>Más Ejemplos y Referencias</h2>
